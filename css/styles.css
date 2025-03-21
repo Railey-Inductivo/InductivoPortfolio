@@ -17,7 +17,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-/* Navigation Bar */
+/* ================================= Navigation Bar ================================= */
 
 header {
   position: sticky;
@@ -42,13 +42,12 @@ header {
   align-items: center;
   gap: 24px;
   list-style: none;
-  font-family: "League Spartan", sans-serif;
+  font: 500 1rem "League Spartan", sans-serif;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--lightest-gray);
-  list-style-type: none;
 }
 
 .nav-links a:not(.cta-btn):hover {
@@ -71,15 +70,49 @@ header {
   transition: background-color 0.3s ease;
 }
 
-/* Hero Section */
+/* ================================= Hero Section ================================= */
+
 .hero-container {
-  background-image: url("/images/heroBG.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  background: url("/images/heroBG.png") no-repeat center/cover;
   height: 80vh;
 }
 
+.hero-title {
+  font: 3.375rem "League Spartan", sans-serif;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  max-width: 1100px;
+  word-wrap: break-word;
+  font-size: 1.125rem;
+}
+
 .title-name {
-  color: red;
+  color: var(--primary);
+}
+
+.hero-buttons .btn {
+  text-decoration: none;
+  color: var(--lightest-gray);
+  background-color: var(--primary);
+  padding: 13px 20px;
+  border-radius: 2px;
+  font: 500 1rem "League Spartan", sans-serif;
+}
+
+.hero-buttons .outline-btn {
+  text-decoration: none;
+  color: var(--primary);
+  border: 3px solid var(--primary);
+  padding: 10px 20px;
+  border-radius: 2px;
+  font: 500 1rem "League Spartan", sans-serif;
 }
