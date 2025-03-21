@@ -13,65 +13,73 @@
 }
 
 body {
-  background-color: var(--lightest-gray);
+  background-color: var(--gray);
   font-family: "Raleway", sans-serif;
 }
 
-/* Navbar */
-nav {
+/* Navigation Bar */
+
+header {
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 150px;
+}
+
+.nav-container {
   background-color: var(--primary);
-  border-bottom: 2px solid var(--lighter-primary);
+  display: flex;
+  padding: 20px 150px;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--lighter-primary);
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
   width: 160px;
-  height: auto;
 }
 
 .nav-links {
   display: flex;
+  flex-flow: wrap;
   align-items: center;
-}
-
-.nav-links a {
-  display: block;
-  padding: 30px 16px;
-  color: var(--lightest-gray);
-  font-size: 1rem;
+  gap: 24px;
+  list-style: none;
   font-family: "League Spartan", sans-serif;
 }
 
-.nav-links a:hover {
+.nav-links a {
+  text-decoration: none;
+  color: var(--lightest-gray);
+  list-style-type: none;
+}
+
+.nav-links a:not(.cta-btn):hover {
   color: var(--secondary);
-  text-decoration: underline;
-  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--secondary);
+  transition: 0.1s ease-in;
 }
 
 .nav-links .cta-btn {
-  margin-left: 12px;
-  padding: 14px 16px;
-  background-color: var(--secondary);
   color: var(--darker-gray);
+  background-color: var(--secondary);
+  padding: 13px 20px;
   border-radius: 2px;
-  transition: transform 0.3s, background-color 0.4s ease;
 }
 
 .nav-links .cta-btn:hover {
-  background-color: var(--lighter-primary);
-  text-decoration: none;
+  background-color: #a4baff;
+  color: var(--darker-gray);
+  transition: background-color 0.3s ease;
 }
 
-.cta-icon {
-  margin-left: 10px;
+/* Hero Section */
+.hero-container {
+  background-image: url("/images/heroBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.title-name {
+  color: red;
 }
