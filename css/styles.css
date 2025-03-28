@@ -27,6 +27,8 @@ header {
 .nav-container {
   background-color: var(--primary);
   display: flex;
+  text-align: center;
+  align-items: center;
   padding: 20px 150px;
   justify-content: space-between;
   border-bottom: 3px solid var(--lighter-primary);
@@ -38,7 +40,6 @@ header {
 
 .nav-links {
   display: flex;
-  flex-flow: wrap;
   align-items: center;
   gap: 24px;
   list-style: none;
@@ -48,6 +49,7 @@ header {
 .nav-links a {
   text-decoration: none;
   color: var(--lightest-gray);
+  align-items: center;
 }
 
 .nav-links a:not(.cta-btn):hover {
